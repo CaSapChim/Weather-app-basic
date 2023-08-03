@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Weather app</title>
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="search-box">
+      <input type="text" placeholder="Nhập tên thành phố" id="city-input">
+      <button onclick="weather()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="city-name">
+      <h2></h2>
+    </div>
+    <div class="weather-box">
+      <img src="" alt="">
+      <p class="temp"></p>
+      <p class="weather"></p>
+    </div>
+    <div class="columns" id="columns">
+      <div class="weather-details" id="weather-details">
+        <div class="humidity">
+          <h3>Độ ẩm</h3>
+          <span></span>
+        </div>
+        <div class="wind">
+          <h3>Tốc độ gió</h3> <i class="fa-solid fa-wind"></i>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+</body>
+</html>
